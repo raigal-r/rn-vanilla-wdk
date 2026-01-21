@@ -24,6 +24,6 @@ function withWalletProvider(content: React.ComponentType) {
       chains: CHAINS_CONFIG,
       enableCaching: true,
     }}>
-      content()
+      <Content />
   </WalletProvider>;
 }
