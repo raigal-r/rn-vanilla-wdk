@@ -45,21 +45,22 @@
 //   }
 // };
 
+// chains.tsx - Candide version
 export const CHAINS_CONFIG = {
   ethereum: {
-    chainId: 11155111, // Sepolia Testnet ID
+    chainId: 11155111,
     blockchain: 'ethereum',
-    provider: 'https://sepolia.gateway.tenderly.co',
-    // Pimlico Infrastructure
-    bundlerUrl: 'https://public.pimlico.io/v2/11155111/rpc?apikey=pim_TZ1bdEPGR3Zd4bFgFKn6Zo',
-    paymasterUrl: 'https://public.pimlico.io/v2/11155111/rpc?apikey=pim_TZ1bdEPGR3Zd4bFgFKn6Zo',
-    paymasterAddress: '0x777777777777AeC03fd955926DbF81597e66834C',
+    provider: 'https://sepolia.drpc.org',
+    bundlerUrl: 'https://api.candide.dev/public/v3/11155111',
+    paymasterUrl: 'https://api.candide.dev/public/v3/11155111',
+    paymasterAddress: '0x8b1f6cb5d062aa2ce8d581942bbb960420d875ba',
     entrypointAddress: '0x0000000071727De22E5E9d8BAf0edAc6f37da032',
+    safeModulesVersion: '0.3.0',
     paymasterToken: {
-      address: '0xd077a400968890eacc75cdc901f0356c943e4fdb', // Sepolia USDT
+      address: '0xd077a400968890eacc75cdc901f0356c943e4fdb',
     },
-    transferMaxFee: 5000000,
-    swapMaxFee: 5000000,
-    bridgeMaxFee: 5000000,
+    transferMaxFee: 100000,
+    swapMaxFee: 100000,
+    bridgeMaxFee: 100000,
   },
 };
